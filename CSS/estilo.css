@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+/* Agregamos la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Utilizamos la fuente en el header */
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3c3c3c;
+    color: white;
+    padding: 50px;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#header button {
+    display: inline-block;
+    margin: 15px;
+}
+
+#header .button-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#main{
+    background-color: #ffffc4;
+    color: #3c3c3c;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif; /* Utilizamos una fuente por defecto para el main */
+    font-size: 17px;
+    max-width: 100%; 
+    overflow-x: hidden; 
+}
+
+#footer{
+    background-color: #3c3c3c;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif; /* Agregamos la fuente */
+}
+
+
+/* Estilos para pantallas más pequeñas que 600px */
+@media (max-width: 600px) {
+    #header {
+      flex-direction: column;
+    }
+  
+    #header h1 {
+      margin: 20px auto;
+    }
+  
+    #main, #footer {
+      padding: 10px;
+    }
+  }
+  
