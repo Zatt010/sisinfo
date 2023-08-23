@@ -71,4 +71,42 @@ body {
       padding: 10px;
     }
   }
-  
+/* Estilos para la tabla de canciones */
+#canciones {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1f1e1e;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#canciones h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c2c2c;
+}
+
+a {
+    text-decoration: none;
+    color: #d1d0d0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
