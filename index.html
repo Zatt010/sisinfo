@@ -222,26 +222,33 @@
             </tbody>
         </table>
     </div>
+    <title>Agradecimiento por Comentario</title>
+    <script>
+    function enviarComentario() {
+    const nombre = document.getElementById("name").value;
+    const mensajeAgradecimiento = `Gracias por visitar nuestra pagina :3, ${nombre}!`;
+    document.getElementById("agradecimiento").textContent = mensajeAgradecimiento;
+}
+</script>
     <div id="comment-form">
         <h2>Deja tu comentario</h2>
-        <form >
+        <form>
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
             <label for="comment">Comentario:</label>
             <textarea id="comment" name="comment" rows="4" required></textarea>
             
-            <!-- Agregar el elemento select para el género musical -->
-            <label for="genre">Género Musical Favorito:</label>
-            <select id="genre" name="genre">
-                <option value="rock">Rock</option>
-                <option value="pop">Pop</option>
-                <option value="hiphop">Hip Hop</option>
-                <option value="otro">Otro</option>
+            <label for="genero">Género Musical Favorito:</label>
+            <select id="genero" name="genero">
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="Hip Hop">Hip Hop</option>
+                <option value="Otro...">Otro</option>
             </select>
-            
-            <button type="submit">Enviar Comentario</button>
+            <button type="button" onclick="enviarComentario()">Enviar Comentario</button>
         </form>
     </div>
+    <p id="agradecimiento"></p>
 </div>
 <div id="footer">
     <p> © 2023, XDXDXDXDXD</p>
